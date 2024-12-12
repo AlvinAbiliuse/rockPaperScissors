@@ -15,8 +15,8 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-	let answer = prompt("1 for rock, 2 for paper and 3 for scissors");
-	return determineChoice(answer - 1);
+	/* let answer = prompt("1 for rock, 2 for paper and 3 for scissors");
+	return determineChoice(answer - 1); */
 }
 
 function playRound(humanChoice, computerChoice) {
@@ -46,7 +46,6 @@ function playRound(humanChoice, computerChoice) {
 		}
 	} else if (humanChoice == "scissors") {
 		if (computerChoice == "rock") {
-			console.log("You lose, Rock beats Scissors");
 			computerScore++;
 		} else if (computerChoice == "paper") {
 			console.log("You win, Scissors beat paper");
@@ -68,4 +67,4 @@ function playGame(n) {
 	}
 }
 
-playGame(prompt("How many rounds do you want to play (number)"));
+playGame(1) /* prompt("How many points do you want to play for (number)")); */

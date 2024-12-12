@@ -2,8 +2,23 @@
 <html>
 	<head>
 		<title>Rock Paper Scissors</title>
+		<link rel="stylesheet" href="./styles.css">
 	</head>
 	<body>
-		<script src="./script.js"></script>
+	<div id="container">
+		<div id="scoreBoard">
+			<div id="scores">
+				<div>Computer Score: <span id="computerScore"></span></div>
+				<div>Your Score: <span id="humanScore"></span></div>
+			</div>
+			<div id="message">Press the button to start...</div>
+		</div>
+		<div id="choices">
+			<button id="rock">ROCK</button>
+			<button id="paper">PAPER</button>
+			<button id="scissors">SCISSORS</button>
+		</div>
+	</div>
+	<script src="./script.js"></script>
 	</body>
 </html>
