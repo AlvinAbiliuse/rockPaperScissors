@@ -54,3 +54,7 @@ button:hover {
 	font-size: 19px;
 }
 
+button:active {
+	font-size: 18px;
+}
+
